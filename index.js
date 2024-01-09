@@ -34,6 +34,7 @@ let weather = {
         switch (currentDate.getDay()) {
             case 5:
                 document.querySelector(".day").innerText = "Friday";
+                document.querySelector(".dayOne").innerText = "Fri";
                 document.querySelector(".dayTwo").innerText = "Sat";
                 document.querySelector(".dayThree").innerText = "Sun";
                 document.querySelector(".dayFour").innerText = "Mon";
@@ -43,6 +44,7 @@ let weather = {
                 break;
             case 6:
                 document.querySelector(".day").innerText = "Saturday";
+                document.querySelector(".dayOne").innerText = "Sat";
                 document.querySelector(".dayTwo").innerText = "Sun";
                 document.querySelector(".dayThree").innerText = "Mon";
                 document.querySelector(".dayFour").innerText = "Tue";
@@ -52,6 +54,7 @@ let weather = {
                 break;
             case 0:
                 document.querySelector(".day").innerText = "Sunday";
+                document.querySelector(".dayOne").innerText = "Sun";
                 document.querySelector(".dayTwo").innerText = "Mon";
                 document.querySelector(".dayThree").innerText = "Tue";
                 document.querySelector(".dayFour").innerText = "Wed";
@@ -61,6 +64,7 @@ let weather = {
                 break;
             case 1:
                 document.querySelector(".day").innerText = "Monday";
+                document.querySelector(".dayOne").innerText = "Mon";
                 document.querySelector(".dayTwo").innerText = "Tue";
                 document.querySelector(".dayThree").innerText = "Wed";
                 document.querySelector(".dayFour").innerText = "Thu";
@@ -70,6 +74,7 @@ let weather = {
                 break;
             case 2:
                 document.querySelector(".day").innerText = "Tuesday";
+                document.querySelector(".dayOne").innerText = "Tue";
                 document.querySelector(".dayTwo").innerText = "Wed";
                 document.querySelector(".dayThree").innerText = "Thu";
                 document.querySelector(".dayFour").innerText = "Fri";
@@ -79,6 +84,7 @@ let weather = {
                 break;
             case 3:
                 document.querySelector(".day").innerText = "Wednesday";
+                document.querySelector(".dayOne").innerText = "Wed";
                 document.querySelector(".dayTwo").innerText = "Thu";
                 document.querySelector(".dayThree").innerText = "Fri";
                 document.querySelector(".dayFour").innerText = "Sat";
@@ -88,6 +94,7 @@ let weather = {
                 break;
             case 4:
                 document.querySelector(".day").innerText = "Thursday";
+                document.querySelector(".dayOne").innerText = "Thu";
                 document.querySelector(".dayTwo").innerText = "Fri";
                 document.querySelector(".dayThree").innerText = "Sat";
                 document.querySelector(".dayFour").innerText = "Sun";
@@ -108,7 +115,6 @@ let weather = {
         document.querySelector(".windSpeed").innerText = "Wind Speed: " + windSpeed;
         document.querySelector(".humidity").innerText = "Humidity: " + humidity;
         document.querySelector(".temp").innerHTML = temp[0] + "°C";
-        document.querySelector(".dayOne").innerText = cDay;
         document.querySelector(".tempOne").innerHTML = "<strong>" + temp[0] + "°C</strong>";
         document.querySelector(".humidity-1").innerText = "Humidity: " + humidity;
         document.querySelector(".weather-1").innerText = description;
