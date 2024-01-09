@@ -31,7 +31,7 @@ let weather = {
         const { name } = data;
         const { description } = data.weather[0];
         const temp = data.main.temp.toLocaleString().split(".");
-        switch (cDay) {
+        switch (todayDay[0]) {
             case 'Fri':
                 document.querySelector(".day").innerText = "Friday";
                 document.querySelector(".dayTwo").innerText = "Sat";
@@ -108,7 +108,7 @@ let weather = {
         document.querySelector(".windSpeed").innerText = "Wind Speed: " + windSpeed;
         document.querySelector(".humidity").innerText = "Humidity: " + humidity;
         document.querySelector(".temp").innerHTML = temp[0] + "°C";
-        document.querySelector(".dayOne").innerText = "Sun";
+        document.querySelector(".dayOne").innerText = cDay;
         document.querySelector(".tempOne").innerHTML = "<strong>" + temp[0] + "°C</strong>";
         document.querySelector(".humidity-1").innerText = "Humidity: " + humidity;
         document.querySelector(".weather-1").innerText = description;
