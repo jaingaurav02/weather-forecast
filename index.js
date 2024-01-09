@@ -31,8 +31,8 @@ let weather = {
         const { name } = data;
         const { description } = data.weather[0];
         const temp = data.main.temp.toLocaleString().split(".");
-        switch (todayDay[0]) {
-            case 'Fri':
+        switch (currentDate.getDay()) {
+            case 5:
                 document.querySelector(".day").innerText = "Friday";
                 document.querySelector(".dayTwo").innerText = "Sat";
                 document.querySelector(".dayThree").innerText = "Sun";
@@ -41,7 +41,7 @@ let weather = {
                 document.querySelector(".daySix").innerText = "Wed";
                 document.querySelector(".daySeven").innerText = "Thu";
                 break;
-            case 'Sat':
+            case 6:
                 document.querySelector(".day").innerText = "Saturday";
                 document.querySelector(".dayTwo").innerText = "Sun";
                 document.querySelector(".dayThree").innerText = "Mon";
@@ -50,7 +50,7 @@ let weather = {
                 document.querySelector(".daySix").innerText = "Thu";
                 document.querySelector(".daySeven").innerText = "Fri";
                 break;
-            case 'Sun':
+            case 0:
                 document.querySelector(".day").innerText = "Sunday";
                 document.querySelector(".dayTwo").innerText = "Mon";
                 document.querySelector(".dayThree").innerText = "Tue";
@@ -59,7 +59,7 @@ let weather = {
                 document.querySelector(".daySix").innerText = "Fri";
                 document.querySelector(".daySeven").innerText = "Sat";
                 break;
-            case 'Mon':
+            case 1:
                 document.querySelector(".day").innerText = "Monday";
                 document.querySelector(".dayTwo").innerText = "Tue";
                 document.querySelector(".dayThree").innerText = "Wed";
@@ -68,7 +68,7 @@ let weather = {
                 document.querySelector(".daySix").innerText = "Sat";
                 document.querySelector(".daySeven").innerText = "Sun";
                 break;
-            case 'Tue':
+            case 2:
                 document.querySelector(".day").innerText = "Tuesday";
                 document.querySelector(".dayTwo").innerText = "Wed";
                 document.querySelector(".dayThree").innerText = "Thu";
@@ -77,7 +77,7 @@ let weather = {
                 document.querySelector(".daySix").innerText = "Sun";
                 document.querySelector(".daySeven").innerText = "Mon";
                 break;
-            case 'Wed':
+            case 3:
                 document.querySelector(".day").innerText = "Wednesday";
                 document.querySelector(".dayTwo").innerText = "Thu";
                 document.querySelector(".dayThree").innerText = "Fri";
@@ -86,7 +86,7 @@ let weather = {
                 document.querySelector(".daySix").innerText = "Mon";
                 document.querySelector(".daySeven").innerText = "Tue";
                 break;
-            case 'Thu':
+            case 4:
                 document.querySelector(".day").innerText = "Thursday";
                 document.querySelector(".dayTwo").innerText = "Fri";
                 document.querySelector(".dayThree").innerText = "Sat";
