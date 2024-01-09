@@ -31,7 +31,7 @@ let weather = {
         const { name } = data;
         const { description } = data.weather[0];
         const temp = data.main.temp.toLocaleString().split(".");
-        switch (todayDay[0]) {
+        switch (cDay) {
             case 'Fri':
                 document.querySelector(".day").innerText = "Friday";
                 document.querySelector(".dayTwo").innerText = "Sat";
