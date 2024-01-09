@@ -169,6 +169,7 @@ let forecast = {
 
     search: function () {
         this.fetchForecast(document.querySelector(".search-bar").value);
+        console.log(document.querySelector(".search-bar").value);
     }
 }
 
